@@ -1,0 +1,9 @@
+package*
+.vs/*
+threeplatforms.Android/bin/*
+threeplatforms.Android/obj/*
+threeplatforms.iOS/bin/*
+threeplatforms.iOS/obj/*
+threeplatforms.macOS/bin/*
+threeplatforms.macOS/obj/*
+
