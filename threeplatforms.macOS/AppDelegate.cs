@@ -12,8 +12,12 @@ namespace threeplatforms.macOS
 
         public override NSWindow MainWindow => _window;
 
+        public static AppDelegate Self { get; set; }
+
         public AppDelegate()
         {
+            AppDelegate.Self = this;
+
             var style = NSWindowStyle.Closable | NSWindowStyle.Resizable | NSWindowStyle.Titled;
 
             var rect = new CoreGraphics.CGRect(200, 200, 800, 600);

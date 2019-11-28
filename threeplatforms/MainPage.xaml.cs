@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using threeplatforms.Interfaces;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace threeplatforms
@@ -12,6 +9,16 @@ namespace threeplatforms
         public MainPage()
         {
             InitializeComponent();
+            if (Device.RuntimePlatform != Device.macOS)
+            {
+                imgTest.WidthRequest = DeviceDisplay.MainDisplayInfo.Width;
+                imgTest.HeightRequest = DeviceDisplay.MainDisplayInfo.Height;
+            }
+            else
+            {
+                imgTest.WidthRequest = DependencyService.Get<IScreenSize>().Width;
+                imgTest.HeightRequest = DependencyService.Get<IScreenSize>().Height;
+            }
         }
     }
 }

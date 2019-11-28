@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:threeplatforms" x:Class="threeplatforms.MainPage">
-	<StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-		<!-- this works on XF.mac -->
-		<Image Source="https://img2.photo137.com/CDM1/DB258201-D-1-1.jpg" WidthRequest="300" HeightRequest="300" Aspect="AspectFill"/>
-		<!-- this doesn't
-		<Image Source="https://img2.photo137.com/CDM1/DB258201-D-1-1.jpg" Aspect="AspectFill"/>-->
+	<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+		<Image Source="https://www.all-the-johnsons.co.uk/chops/2.jpg" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" x:Name="imgTest"/>
 	</StackLayout>
 </ContentPage>
